@@ -25,8 +25,8 @@ jobs:
 
     - name: Get Git Tag
       run: |
-       git describe --tags
        git tag -a v1.0.0 -m "first release"
+       git describe --tag
       #env:
       #  GIT_TAG: ${{ env.GIT_TAG }}
 
